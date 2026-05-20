@@ -25,6 +25,14 @@ const SalesQuotationGroup = sequelize.define('sales_quotation_group', {
     error_message: {
         type: DataTypes.TEXT,
         allowNull: true
+    },
+    total_pages: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
+    },
+    total_records: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
     }
 }, {
     freezeTableName: true,
