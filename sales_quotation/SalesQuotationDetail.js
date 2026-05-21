@@ -23,6 +23,14 @@ const SalesQuotationDetail = sequelize.define('sales_quotation_detail', {
         type: DataTypes.TEXT,
         allowNull: true
     },
+    branch_id: {
+        type: DataTypes.INTEGER,
+        allowNull: true
+    },
+    branch_name: {
+        type: DataTypes.STRING,
+        allowNull: true
+    },
     export_status: {
         type: DataTypes.ENUM('PENDING', 'IN_PROGRESS', 'SUCCESS', 'FAILED'),
         defaultValue: 'PENDING'
