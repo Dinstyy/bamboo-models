@@ -22,6 +22,22 @@ const SalesQuotationDetail = sequelize.define('sales_quotation_detail', {
     raw_data: {
         type: DataTypes.TEXT,
         allowNull: true
+    },
+    export_status: {
+        type: DataTypes.ENUM('PENDING', 'IN_PROGRESS', 'SUCCESS', 'FAILED'),
+        defaultValue: 'PENDING'
+    },
+    export_error_message: {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
+    export_response: {
+        type: DataTypes.TEXT,
+        allowNull: true
+    },
+    exported_at: {
+        type: DataTypes.DATE,
+        allowNull: true
     }
 }, {
     freezeTableName: true,
