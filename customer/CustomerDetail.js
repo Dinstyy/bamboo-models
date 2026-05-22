@@ -28,18 +28,7 @@ const CustomerDetail = sequelize.define('customer_detail', {
     }
 }, {
     freezeTableName: true,
-    timestamps: true,
-    indexes: [
-        {
-            fields: ['group_id']
-        },
-        {
-            fields: ['accurate_id']
-        },
-        {
-            fields: ['customerId']
-        }
-    ]
+    timestamps: true
 });
 
 export default CustomerDetail;
