@@ -1,3 +1,4 @@
+// CustomerDetail.js
 import { DataTypes } from "sequelize";
 import sequelize from '../../../config/db.config.js';
 
