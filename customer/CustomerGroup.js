@@ -25,6 +25,10 @@ const CustomerGroup = sequelize.define('customer_group', {
     total_records: {
         type: DataTypes.INTEGER,
         defaultValue: 0
+    },
+    current_page: {
+        type: DataTypes.INTEGER,
+        defaultValue: 0
     }
 }, {
     freezeTableName: true,
